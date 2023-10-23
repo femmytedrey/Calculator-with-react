@@ -150,7 +150,7 @@ function evaluate({ currentOperand, previousOperand, operation }) {
 
 // React component for the calculator app
 function App() {
-  const [{ currentOperand, previousOperand, operation, overwrite }, dispatch] = useReducer(reducer, {})
+  const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(reducer, {})
 
   return (
     <div className="calculator-grid">
