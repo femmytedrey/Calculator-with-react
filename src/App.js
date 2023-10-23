@@ -104,7 +104,12 @@ function reducer(state, {type, payload}){
         operation: null,
         currentOperand: evaluate(state)
       }
+
+    default:
+      // Default case for unknown actions
+      return state;
   }
+
 }
 
 // Define a number formatter to format operands for display
